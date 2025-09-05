@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Moderna</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #74ebd5, #ACB6E5);
+            color: #333;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 30px 10px;
+            text-align: center;
+            border-bottom: 5px solid #FF6B6B;
+        }
+
+        nav {
+            background-color: #FF6B6B;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            margin: 5px 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: block;
+            border-radius: 25px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color: #FF8C42;
+            transform: scale(1.1);
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .content, .sidebar {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .content:hover, .sidebar:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+        }
+
+        .content {
+            flex: 3;
+            min-width: 300px;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #FF6B6B;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #FF8C42;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Página Moderna</h1>
+        <p>Un diseño colorido y atractivo con HTML y CSS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="content">
+            <h2>Contenido Principal</h2>
+            <p>Esta es el área principal de la página. Aquí puedes poner artículos, noticias o cualquier información importante.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed arcu non justo pharetra facilisis.</p>
+            <button>Leer Más</button>
+        </div>
+
+        <div class="sidebar">
+            <h2>Barra Lateral</h2>
+            <p>Aquí puedes colocar enlaces, noticias rápidas o información adicional.</p>
+            <button>Suscribirse</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Mi Página Moderna. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
